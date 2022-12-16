@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<div class="container">
+    <header class="blog-header lh-1 py-3">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+            <div class="col-4 pt-1">
+                <a class="link-secondary"  href="/notice/noticeList.do">NOTICE</a>
+            </div>
+            <div class="col-4 text-center">
+                <a class="blog-header-logo text-dark" href="/"><img src="https://www.kangolkorea.com/img/header/logo.png"></a>
+            </div>
+            <div th:fragment="tnb" id="tnb" class="collapse navbar-collapse">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+			    	<li class="nav-item"><a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/member/login}">로그인</a></li>
+				    <li class="nav-item"><a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/member/logout}">로그아웃</a></li>
+				    <li class="nav-item"><a class="nav-link" sec:authorize="isAnonymous()" th:href="@{/member/signUp}">회원가입</a></li>
+				    <li class="nav-item"><a class="nav-link" sec:authorize="isAuthenticated()" th:href="@{/member/info}">내정보</a></li>
+				    <li class="nav-item"><a class="nav-link" sec:authorize="hasRole('ADMIN')" th:href="@{/member/admin}">어드민</a></li>
+				</ul>
+			</div>
+        </div>
+    </header>
+
+    <div class="nav-scroller py-1 mb-2 ">
+        <nav class="nav d-flex justify-content-between">
+            <a class="p-2 link-secondary" th:href="@{/hand/hand.do}">HANDWARE</a>
+            <a class="p-2 link-secondary" href="#">BAG</a>
+            <a class="p-2 link-secondary" href="#">CLOTHES</a>
+            <a class="p-2 link-secondary" href="#">SHOES</a>
+            <a class="p-2 link-secondary" href="#">ACC</a>
+            <a class="p-2 link-secondary" href="qna/qnaList.do">COMMUNITY</a>
+        </nav>
+    </div>
+</div>

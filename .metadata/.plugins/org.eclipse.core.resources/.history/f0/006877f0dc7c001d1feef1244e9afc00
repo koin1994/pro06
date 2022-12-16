@@ -1,0 +1,6 @@
+package com.shop2.myapp.config;
+
+@Configuation
+public class MybatisConfig {
+
+}

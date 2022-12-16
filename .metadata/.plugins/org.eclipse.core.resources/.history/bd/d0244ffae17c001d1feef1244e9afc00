@@ -1,0 +1,61 @@
+<nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+	<div class="in_container"> 
+	  <a class="navbar-brand" id="logo" href="index.html"><img src="https://www.kangolkorea.com/img/header/logo.png" alt="logo" width="auto" height="auto;"></a>
+	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+	    <span class="navbar-toggler-icon"></span>
+	  </button>
+	
+	  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+	    <ul class="navbar-nav mr-auto">
+	      <li class="nav-item active">
+	        <a class="nav-link" href="index.html">Kangol<span class="sr-only">(current)</span></a>
+	      </li>
+	      <li class="nav-item">
+	        <a class="nav-link" href="index.html">HOME</a>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+	          Product
+	        </a>
+	        <div class="dropdown-menu">
+	          <a class="dropdown-item" href="">MAN</a>
+	          <a class="dropdown-item" href="GetProductItemListCtrl?cateNo=2">WOMEN</a>
+	          <div class="dropdown-divider"></div>
+	          <a class="dropdown-item" href="GetProductItemListCtrl?cateNo=3">SPORT</a>
+	          <a class="dropdown-item" href="GetProductItemListCtrl?cateNo=4">CLASSIC</a>
+	          <a class="dropdown-item" href="GetProductItemListCtrl?cateNo=5">GOLD</a>
+	          <a class="dropdown-item" href="GetProductItemListCtrl?cateNo=6">POCKET</a>
+	        </div>
+	      </li>
+	      <li class="nav-item dropdown">
+	        <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="true">
+	          Community
+	        </a>
+	        <div class="dropdown-menu">
+	          <a class="dropdown-item" href="/pro02/GetBoardListCtrl">Notice</a>
+	          <a class="dropdown-item" href="#">Q&A</a>
+	          <a class="dropdown-item" href="#">Use After</a>
+	        </div>
+	      </li>
+	    </ul>
+		<ul class="nav justify-content-end">
+		  
+			  <li class="nav-item" style="color:white;">
+			    <span class="nav-link">관리자님</span>
+			  </li>
+			  <li class="nav-item" >
+			    <a class="nav-link active" style="color:gray" href="/pro02/LogOutCtrl">로그아웃</a>
+			  </li>
+			  <li class="nav-item">
+			    <a class="nav-link" style="color:gray" href="/pro02/GetCustomInfoCtrl">회원정보</a>
+			  </li>
+			  
+				  <li class="nav-item">
+				    <a class="nav-link" style="color:gray" href="/pro02/admin/index.jsp">관리자 페이지로</a>
+				  </li>
+			  
+		  
+		</ul>	    
+	  </div>
+	</div>
+</nav>
